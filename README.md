@@ -14,6 +14,12 @@ Official implementation of the Q-XAI framework for interpretable complex-valued 
 - **QICP Prediction**: Quantum-inspired conformal prediction (34% more compact sets)
 - **Practical Efficiency**: Only 1.6x computational overhead
 
+## Framework Overview
+
+![Q-XAI Framework](assets/qxai-framework.png)
+
+*Figure 1: The integrated Q-XAI framework showing the central complex-valued transformer architecture and its operational workflow. (1) Training: The transformer is trained on training data. (2) Calibration: Nonconformity scores are computed on a hold-out set to find the QICP coverage threshold. (3) Interpretable Inference: For a new input, the framework produces prediction along with (a) QISA attribution map, (b) AUQ uncertainty estimate, and (c) QICP prediction set with formal coverage guarantees.*
+
 ## Performance
 
 | Dataset | Q-XAI | Best Baseline | Improvement |
@@ -74,15 +80,17 @@ prediction_set = qicp.predict_set(input_spectrogram, confidence=0.9)
 
 ```
 qxai/
-├── config/                  # Configuration files
-├── experiments/            # Training and evaluation scripts
-├── src/                   # Source code
-│   ├── data/             # Data processing
+├── assets/                 # Images and documentation assets
+│   └── qxai_framework.png  # Framework architecture diagram
+├── config/                 # Configuration files
+├── experiments/           # Training and evaluation scripts
+├── src/                  # Source code
+│   ├── data/            # Data processing
 │   ├── interpretability/ # QISA, AUQ, QICP methods
-│   ├── models/          # Complex-valued architectures
-│   ├── training/        # Training utilities
-│   └── utils/           # Helper functions
-├── tests/                # Unit tests
+│   ├── models/         # Complex-valued architectures
+│   ├── training/       # Training utilities
+│   └── utils/          # Helper functions
+├── tests/               # Unit tests
 └── requirements.txt
 ```
 
