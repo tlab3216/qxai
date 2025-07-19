@@ -1,7 +1,7 @@
 # Q-XAI: Interpretable Complex-Valued Transformers for Acoustic Scene Classification
 
 [![Paper](https://img.shields.io/badge/Paper-AAAI%202026-blue)](https://github.com/tlab3216/qxai)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
 Official implementation of the Q-XAI framework for interpretable complex-valued transformers in acoustic scene classification. Q-XAI combines quantum-inspired computing principles with transformer architectures to provide mathematically rigorous interpretability for complex-valued neural networks.
@@ -16,7 +16,7 @@ Official implementation of the Q-XAI framework for interpretable complex-valued 
 
 ## Framework Overview
 
-![Q-XAI Framework](assets/qxai-framework.png)
+![Q-XAI Framework](assets/qxai_framework.png)
 
 *Figure 1: The integrated Q-XAI framework showing the central complex-valued transformer architecture and its operational workflow. (1) Training: The transformer is trained on training data. (2) Calibration: Nonconformity scores are computed on a hold-out set to find the QICP coverage threshold. (3) Interpretable Inference: For a new input, the framework produces prediction along with (a) QISA attribution map, (b) AUQ uncertainty estimate, and (c) QICP prediction set with formal coverage guarantees.*
 
@@ -135,7 +135,7 @@ TRAINING_CONFIG = {
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0.
 
 ## Contact
 
