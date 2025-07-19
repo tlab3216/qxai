@@ -16,7 +16,7 @@ Official implementation of the Q-XAI framework for interpretable complex-valued 
 
 ## Framework Overview
 
-![Q-XAI Framework](assets/qxai_framework.png)
+![Q-XAI Framework](assets/qxai-framework.png)
 
 *Figure 1: The integrated Q-XAI framework showing the central complex-valued transformer architecture and its operational workflow. (1) Training: The transformer is trained on training data. (2) Calibration: Nonconformity scores are computed on a hold-out set to find the QICP coverage threshold. (3) Interpretable Inference: For a new input, the framework produces prediction along with (a) QISA attribution map, (b) AUQ uncertainty estimate, and (c) QICP prediction set with formal coverage guarantees.*
 
